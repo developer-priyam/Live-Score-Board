@@ -4,10 +4,14 @@ import com.game.scoreboard.model.Game;
 
 import java.util.List;
 
+/**
+ * This is the Helper class for Generating the Summary output representation for all the finished games.
+ */
 public class SummaryGenerator {
 
     private SummaryGenerator() {}
 
+    // Gives string based output
     public static String generateSummaryInRequiredFormat(Game game) {
         return game.gameDetails().homeTeam() +
                 " " +
@@ -18,6 +22,7 @@ public class SummaryGenerator {
                 game.gameDetails().awayTeamScore();
     }
 
+    // Perform sorting based on the Total Score of the match.
     public static List<Game> sortByTotalScore(List<Game> games) {
         games.sort((g1, g2) -> {
             int g1ts = g1.gameDetails().homeTeamScore() + g1.gameDetails().awayTeamScore();

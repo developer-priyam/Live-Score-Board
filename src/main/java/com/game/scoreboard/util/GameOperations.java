@@ -9,6 +9,13 @@ import com.game.scoreboard.store.InMemoryScoreboard;
 import java.util.*;
 import java.util.stream.Collectors;
 
+/**
+ * This is the layer between the in-memory database (or future actual DB) and handler / service layer.
+ *
+ * This also makes the handlers and DB independent of each other.
+ *
+ * This class implements Singleton Design Pattern.
+ */
 public class GameOperations {
 
     private final InMemoryScoreboard inMemoryScoreboard;
@@ -96,6 +103,7 @@ public class GameOperations {
         } else {
             throw new EventNotFoundException(" Invalid Event ID");
         }
+        // Once we have the sorted result then we reverse the result. This way we get the most recent and highest (by total) scores on the top.
         Collections.reverse(summary);
         return summary;
     }

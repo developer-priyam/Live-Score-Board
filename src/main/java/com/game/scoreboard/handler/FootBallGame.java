@@ -9,6 +9,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
+/**
+ * Implementation class for the Game of type Football. Similar implementation classes can be created for every other type of game.
+ *
+ * This class uses the singleton instance of GameOperation Utility class to handle score board changes.
+ */
 public class FootBallGame implements GameHandler {
 
     private final GameOperations gameOperations;

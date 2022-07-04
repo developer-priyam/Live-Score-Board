@@ -4,6 +4,11 @@ import com.game.scoreboard.model.Event;
 
 import java.util.*;
 
+/**
+ * In Memory Scoreboard score. It uses a simple Hashmap for storing the dta of each Event.
+ *
+ * Implements Singleton Design Pattern
+ */
 public class InMemoryScoreboard {
 
     private static InMemoryScoreboard inMemoryScoreboard;
