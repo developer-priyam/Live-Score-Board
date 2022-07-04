@@ -1,6 +1,6 @@
 #Live Score Board
 
-##How To Use:
+## How To Use:
     > Expected behaviours can be seen through by running the unit tests it self.
     > To Verify the Generate Summary is working fine then you can change the test cases, 
       mainly changing the finished game method call will show the difference.
