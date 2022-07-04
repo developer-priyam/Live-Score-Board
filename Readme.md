@@ -1,4 +1,4 @@
-#Live Score Board
+# Live Score Board
 
 ## How To Use:
     > Expected behaviours can be seen through by running the unit tests it self.
